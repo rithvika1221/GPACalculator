@@ -55,7 +55,6 @@ const ChatbotModal: React.FC<ChatbotModalProps> = ({ isMinimized, toggleMinimize
       const url = 'https://api.openai.com/v1/chat/completions';
       const headers = {
         'Content-type': 'application/json',
-        //'Authorization': `Bearer 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` // Note: API Key should be secured
         'Authorization': `Bearer ${process.env.NEXT_PUBLIC_OPENAI_API_KEY}`
       };
 
